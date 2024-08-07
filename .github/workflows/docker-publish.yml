@@ -31,4 +31,5 @@ jobs:
         tags: ${{ secrets.DOCKER_USERNAME }}/prompt-generator:latest
 
     - name: Image digest
-      run: echo "Image digest: ${{ steps.docker_build.outputs.digest }}"
+      run:
+        echo "Image digest: ${{ steps.docker_build.outputs.digest }}"
