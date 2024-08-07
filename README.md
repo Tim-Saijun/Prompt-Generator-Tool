@@ -1,54 +1,26 @@
-![demo-en](https://github.com/user-attachments/assets/e3633b4f-da6f-4bef-8d7f-5b50b7a003d2)
-![demo-zh](https://github.com/user-attachments/assets/30597922-ad8e-456a-85c8-c5e5fe7e7b3c)
 
 
-# 🎈 Streamlit + LLM Examples App
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/streamlit/llm-examples?quickstart=1)
+# 🎈 Prompt Generator Tool
 
-Starter examples for building LLM apps with Streamlit.
+Application tool that automatically generates prompts with one click.
+
+The tool is designed to help users generate prompts for various tasks, such as text generation, text classification, and text summarization. The tool uses the OpenAI compatible API to generate prompts and provides users with a simple interface to input their desired task and parameters.
+
+This project is inspired by the [Claude AI prompt generator](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/prompt-generator) and aims to provide a similar experience for generating prompts with a simple and intuitive interface.
 
 ## Overview of the App
 
-This app showcases a growing collection of LLM minimum working examples.
-
-Current examples include:
-
-- Chatbot
-- File Q&A
-- Chat with Internet search
-- LangChain Quickstart
-- LangChain PromptTemplate
-- Chat with user feedback
+![demo-en](https://github.com/user-attachments/assets/e3633b4f-da6f-4bef-8d7f-5b50b7a003d2)
+![demo-zh](https://github.com/user-attachments/assets/30597922-ad8e-456a-85c8-c5e5fe7e7b3c)
 
 ## Demo App
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://llm-examples.streamlit.app/)
-
-### Get an OpenAI API key
-
-You can get your own OpenAI API key by following the following instructions:
-
-1. Go to https://platform.openai.com/account/api-keys.
-2. Click on the `+ Create new secret key` button.
-3. Next, enter an identifier name (optional) and click on the `Create secret key` button.
-
-### Enter the OpenAI API key in Streamlit Community Cloud
-
-To set the OpenAI API key as an environment variable in Streamlit apps, do the following:
-
-1. At the lower right corner, click on `< Manage app` then click on the vertical "..." followed by clicking on `Settings`.
-2. This brings the **App settings**, next click on the `Secrets` tab and paste the API key into the text box as follows:
-
-```sh
-OPENAI_API_KEY='xxxxxxxxxx'
-```
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://prompt-generator-tool.streamlit.app/)
 
 ## Run it locally
 
 ```sh
-virtualenv .venv
-source .venv/bin/activate
 pip install -r requirements.txt
-streamlit run Chatbot.py
+streamlit run app.py
 ```
