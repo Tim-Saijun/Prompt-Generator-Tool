@@ -1,3 +1,7 @@
+![demo-en](https://github.com/user-attachments/assets/e3633b4f-da6f-4bef-8d7f-5b50b7a003d2)
+![demo-zh](https://github.com/user-attachments/assets/30597922-ad8e-456a-85c8-c5e5fe7e7b3c)
+
+
 # 🎈 Streamlit + LLM Examples App
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/streamlit/llm-examples?quickstart=1)
