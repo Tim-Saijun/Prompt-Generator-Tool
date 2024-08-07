@@ -35,8 +35,8 @@ with st.sidebar:
     # Configure sidebar
     st.sidebar.header(_("API Configuration"))
     api_key = st.sidebar.text_input(_("API Key"), type="password", value=os.environ.get("OPENAI_API_KEY"))
-    base_url = st.sidebar.text_input(_("Base URL"), value="https://api.openai.com/v1")
-    model_name = st.sidebar.text_input(_("Model Name"), value="gpt-4o-mini")
+    base_url = st.sidebar.text_input(_("Base URL"), value=os.environ.get("OPENAI_BASE_URL"))
+    model_name = st.sidebar.text_input(_("Model Name"), value=os.environ.get("OPENAI_MODEL_NAME"))
 
     if api_key is None:
         try:
@@ -104,4 +104,4 @@ def generate_prompt():
 if submitted:
     message = generate_prompt()
     st.subheader(_("Result"))
-    st.write(pretty_print(message))
+    st.text_area(_("Result"), value=message, height=400)
