@@ -20,6 +20,27 @@ This project is inspired by the [Claude AI prompt generator](https://docs.anthro
 
 ## Run it locally
 
+### Using Docker
+```sh
+docker run -d \
+  -e OPENAI_API_KEY=your_openai_api_key \
+  -e OPENAI_BASE_URL=your_openai_base_url \
+  -e OPENAI_MODEL_NAME=your_openai_model_name \
+  -p 8501:8501 \
+  timsaijun/prompt-generator
+```
+中国大陆的用户可以使用腾讯源：
+```sh
+docker run -d \
+  -e OPENAI_API_KEY=your_openai_api_key \
+  -e OPENAI_BASE_URL=your_openai_base_url \
+  -e OPENAI_MODEL_NAME=your_openai_model_name \
+  -p 8501:8501 \
+  ccr.ccs.tencentyun.com/saijun/prompt-generator
+```
+
+
+### From the source code
 ```sh
 pip install -r requirements.txt
 streamlit run app.py
