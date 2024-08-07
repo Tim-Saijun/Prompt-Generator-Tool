@@ -1,0 +1,35 @@
+msgid "API Configuration"
+msgstr "API 配置"
+
+msgid "API Key"
+msgstr "API Key"
+
+msgid "Base URL"
+msgstr "Base URL"
+
+msgid "Model Name"
+msgstr "模型名称"
+
+msgid "Prompt Generator App"
+msgstr "提示生成应用"
+
+msgid "Welcome Message"
+msgstr "h"
+
+msgid "Task Description and Variable Input"
+msgstr "任务描述和变量输入"
+
+msgid "Task Description"
+msgstr "任务描述"
+
+msgid "Sample Task"
+msgstr "帮我构建一个致力于青少年认知行为疗法的心理咨询助手，用中文回答"
+
+msgid "Optional Variable Names"
+msgstr "可选的变量名称（每行一个）"
+
+msgid "Submit"
+msgstr "提交"
+
+msgid "Result"
+msgstr "结果"

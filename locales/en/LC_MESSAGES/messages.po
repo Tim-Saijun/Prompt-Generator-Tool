@@ -1,0 +1,47 @@
+msgid "API Configuration"
+msgstr "API Configuration"
+
+msgid "API Key"
+msgstr "API Key"
+
+msgid "Base URL"
+msgstr "Base URL"
+
+msgid "Model Name"
+msgstr "Model Name"
+
+msgid "Prompt Generator App"
+msgstr "Prompt Generator App"
+
+msgid "Welcome Message"
+msgstr ""
+"Welcome to the Metaprompt! This is a prompt engineering tool designed to solve "
+"the \"blank page problem\" and give you a starting point for iteration. All you "
+"need to do is enter your task, and optionally the names of the variables you'd "
+"like Claude to use in the template. Then you'll be able to run the prompt that "
+"comes out on any examples you like.\n"
+"\n"
+"**Caveats**\n"
+"- This is designed for single-turn question/response prompts, not multiturn.\n"
+"- The Metaprompt is designed for use with Claude 3 Opus. Generating prompts "
+"with other models may lead to worse results.\n"
+"- The prompt you'll get at the end is not guaranteed to be optimal by any means, "
+"so don't be afraid to change it!"
+
+msgid "Task Description and Variable Input"
+msgstr "Task Description and Variable Input"
+
+msgid "Task Description"
+msgstr "Task Description"
+
+msgid "Sample Task"
+msgstr "Help me build a psychological counseling assistant dedicated to cognitive-behavioral therapy for adolescents, answering in Chinese."
+
+msgid "Optional Variable Names"
+msgstr "Optional Variable Names (one per line)"
+
+msgid "Submit"
+msgstr "Submit"
+
+msgid "Result"
+msgstr "Result"

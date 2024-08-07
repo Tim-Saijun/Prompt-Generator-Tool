@@ -1,0 +1,42 @@
+msgid "API Configuration"
+msgstr "API 配置"
+
+msgid "API Key"
+msgstr "API Key"
+
+msgid "Base URL"
+msgstr "Base URL"
+
+msgid "Model Name"
+msgstr "模型名称"
+
+msgid "Prompt Generator App"
+msgstr "提示生成应用"
+
+msgid "Welcome Message"
+msgstr ""
+"欢迎使用 Metaprompt！这是一个提示工程工具，旨在解决“空白页面问题”，并为您提供一个迭代的起点。"
+"您只需输入您的任务，并可选择输入要在模板中使用的变量名称。然后，您可以在任何示例上运行生成的提示。\n"
+"\n"
+"**注意事项**\n"
+"- 这仅设计用于单轮问答提示，而不是多轮对话。\n"
+"- Metaprompt 设计用于 Claude 3 Opus。使用其他模型生成提示可能会导致结果变差。\n"
+"- 最终生成的提示并不保证是最佳的，因此不要害怕修改它！"
+
+msgid "Task Description and Variable Input"
+msgstr "任务描述和变量输入"
+
+msgid "Task Description"
+msgstr "任务描述"
+
+msgid "Sample Task"
+msgstr "帮我构建一个致力于青少年认知行为疗法的心理咨询助手，用中文回答"
+
+msgid "Optional Variable Names"
+msgstr "可选的变量名称（每行一个）"
+
+msgid "Submit"
+msgstr "提交"
+
+msgid "Result"
+msgstr "结果"
