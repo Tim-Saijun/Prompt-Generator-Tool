@@ -19,6 +19,7 @@ languages = {
 }
 
 # User selects language
+st.sidebar.title("🎻 Prompt Generator App")
 lang = st.sidebar.selectbox("Choose your language / 选择你的语言", list(languages.keys()))
 
 # Get corresponding language code
@@ -30,15 +31,33 @@ lang_translations = gettext.translation('messages', locales_dir, languages=[lang
 lang_translations.install()
 _ = lang_translations.gettext
 
-# Configure sidebar
-st.sidebar.header(_("API Configuration"))
-api_key = st.sidebar.text_input(_("API Key"), type="password", value=os.environ.get("OPENAI_API_KEY"))
-base_url = st.sidebar.text_input(_("Base URL"), value="https://api.openai.com/v1")
-model_name = st.sidebar.text_input(_("Model Name"), value="gpt-4o-mini")
+with st.sidebar:
+    # Configure sidebar
+    st.sidebar.header(_("API Configuration"))
+    api_key = st.sidebar.text_input(_("API Key"), type="password", value=os.environ.get("OPENAI_API_KEY"))
+    base_url = st.sidebar.text_input(_("Base URL"), value="https://api.openai.com/v1")
+    model_name = st.sidebar.text_input(_("Model Name"), value="gpt-4o-mini")
 
-st.title(_("Prompt Generator App"))
+    if api_key is None:
+        try:
+            if 'OPENAI_API_KEY' in st.secrets:
+                api_key = st.secrets['OPENAI_API_KEY']
+            if 'OPENAI_BASE_URL' in st.secrets:
+                base_url = st.secrets['OPENAI_BASE_URL']
+            if 'OPENAI_MODEL_NAME' in st.secrets:
+                model_name = st.secrets['OPENAI_MODEL_NAME']
+        except:
+            pass
+
+    if api_key is not None and base_url is not None and model_name is not None:
+        st.success('API configuration already done!', icon='✅')
+    else:
+        st.warning('Please enter your credentials!', icon='⚠️')
+
+    st.sidebar.write(
+        "Note: You can use any model provider that supports the OpenAI API, such as Llama, Kimi, Qwen, etc.")
+
 st.markdown(_("Welcome Message"))
-
 # Main area
 with st.form("input_area"):
     st.header(_("Task Description and Variable Input"))
